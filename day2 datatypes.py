@@ -87,6 +87,83 @@ Data types
                                                                              any_.pop(2)
                                                                              print(any_)
 
+                                                                        
+                                   - tuple
+                                       :- tuple is collection of different datatypes that are represented in "()" and seperated by ","
+                                       :- tuple is immutable
+
+                                       example: go = (1,'java',[3,4],('python',78))
+                                                print(type(go))
+
+                                        methods
+
+                                            -index(),count() 
+                                                :- variable_name.index(item)
+                                                
+                                                example1: go = (1,'java',[3,4],('python',78))
+                                                         print(go.count(('python',78))) --------#1
+                                                         print(go.count('python'))--------------#0
+                                                         
+                                                example2:go = (1,'python',[2,['python',9],4],'java',['python',[56,78],'java',90])
+                                                         print(go.index('java'))
+                                                         print(go.count('python'))
+                                   - dictionary
+                                       :- dict is a key:value pair
+                                       :- keys and values separated by ":"
+                                       :- keys must be immutable datatypes
+
+                                       methods
+                                        - keys()
+                                            syntax: dict.keys()
+
+                                            example: details = {'name':'satya',
+                                                                'ac': 1234567978,
+                                                                'pan': 674386346
+                                                                'adhr':436591475647
+                                                                'pin': 123}
+                                                     print(details.keys)
+                                                     - values()
+                                                         syntax: dict.values
+
+                                                         example: details = {'name':'satya',
+                                                                             'ac': 1234567978,
+                                                                             'pan': 674386346,
+                                                                             'adhr':436591475647,
+                                                                             'pin': 123}
+                                                                  print(details.values())
+                                                                  
+                                                     -items()
+                                                         syntax: dict.items
+
+                                                         example: details = {'name':'satya',
+                                                                             'ac': 1234567978,
+                                                                             'pan': 674386346,
+                                                                             'adhr':436591475647,
+                                                                             'pin': 123}
+                                                                 print(details.items())
+                                                                 
+                                                     - update()
+                                                         syntax: dict.update
+
+                                                         example: details = {'name':'satya',
+                                                                             'ac': 1234567978,
+                                                                             'pan': 674386346,
+                                                                             'adhr':436591475647,
+                                                                             'pin': 123}
+                                                                 details.update({'name':'saketh'})
+                                                                 print(details)
+                                                     - clear()
+                                                         syntax: dict.clear
+
+                                                         example: details = {'name':'satya',
+                                                                             'ac': 1234567978,
+                                                                             'pan': 674386346,
+                                                                             'adhr':436591475647,
+                                                                             'pin': 123}
+                                                                 details.clear()
+                                                                 print(details)                                                                            
+                                                                             
+
                                                                          
 
                                                                              
